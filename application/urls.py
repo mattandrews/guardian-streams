@@ -11,19 +11,6 @@ app.add_url_rule('/_ah/warmup', 'warmup', view_func=views.warmup)
 
 # Home page
 app.add_url_rule('/', 'home', view_func=views.home)
-app.add_url_rule('/source/<source>/', 'home', view_func=views.home)
-app.add_url_rule('/source/<source>/<edition>/', 'home', view_func=views.home)
-app.add_url_rule('/variant/<variant>/', 'home', view_func=views.home)
-app.add_url_rule('/variant/<variant>/<edition>/', 'home', view_func=views.home)
-
-# popular
-app.add_url_rule('/popular/', 'popular', view_func=views.popular)
-app.add_url_rule('/popular/<edition>/', 'popular', view_func=views.popular)
-
-# editor
-app.add_url_rule('/edit/', 'edit', view_func=views.edit, methods=['GET', 'POST'])
-
-app.add_url_rule('/message/', 'message', view_func=views.msg)
 
 @app.errorhandler(404)
 def page_not_found(e):

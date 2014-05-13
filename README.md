@@ -1,7 +1,7 @@
-mandrews-experiments
+guardian-streams
 ====================
 
-A space for quick hacks and ideas.
+Experimental app to show currently-streaming albums from the Guardian
 
 This Flask app is built using @kamalgill's https://github.com/kamalgill/flask-appengine-template and uses @rrees' smart https://github.com/guardian/simply-py to manage private config data:
 
